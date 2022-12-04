@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/fonts/fonts.css">
+    <link rel="stylesheet" href="./assets/burger/burger.css">
+    <script src="./js/burgerMenuHandler.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Публикации</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        montse: ['Montserrat', 'sans-serif'],
+                        muller: ['Muller'],
+                        proxima: ['Proxima Nova']
+                    },
+                    colors: {
+                        darkGray: '#262626',
+                        limeGreen: '#B4DE4E',
+                        lightSky: '#E2F3FF',
+                        appleGreen: '#7CA90F',
+                        cloudSky: '#F4FAFF',
+                        lightGray: '#C7C7C7'
+                    },
+                    container: {
+                        center: true
+                    },   
+                }
+            }
+        }
+    </script>
+</head>
+<body class="overflow-x-hidden">
+    <header class="w-screen h-[82px] bg-white flex justify-around items-center shadow-md fixed z-20">
+        <nav class="flex items-center">
+            <div class="burger-menu cursor-pointer w-[50px] h-[50px] relative flex items-center justify-center">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="cross">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <p class="font-montse font-bold italic text-darkGray text-lg leading-[1rem] ml-20">кладовка <span class="not-italic">&#x1F60E</span><br>на районе</p>
+        </nav>
+        <div class="flex items-center">
+            <div class="font-montse">
+                <a href="tel:+74956751825" class="font-medium">+7 (495) 675 18 25</a>
+                <p class="font-light">работаем 24/7 💪</p>
+            </div>
+            <button class="bg-darkGray rounded text-limeGreen font-montse font-medium py-1.5 px-4 ml-20
+            hover:bg-limeGreen hover:text-darkGray transition-all">Вход</button>
+        </div>
+    </header>
+    <section class="container flex flex-col pt-[calc(40px+82px)]">
+        <p class="font-proxima text-darkGray/50 mb-12">
+            <a href="/homePage.html" class="hover:text-darkGray transition-all">Главная</a>
+            /
+            <a href="/publicationsPage.html" class="hover:text-darkGray transition-all" id="link">Блог</a>
+        </p>
+        <h1 class="font-bold text-darkGray italic text-3xl font-montse">Все о хранении вещей</h1>
+        <div class="flex my-10">
+            <p class="font-muller text-md text-darkGray border-2 border-limeGreen rounded-3xl px-4 py-2 mr-4 hover:bg-limeGreen hover:text-white hover:cursor-pointer transition-all">Что можно хранить</p>
+            <p class="font-muller text-md text-darkGray border-2 border-limeGreen rounded-3xl px-4 py-2 mr-4 hover:bg-limeGreen hover:text-white hover:cursor-pointer transition-all">Что нельзя хранить</p>
+            <p class="font-muller text-md text-darkGray border-2 border-limeGreen rounded-3xl px-4 py-2 mr-4 hover:bg-limeGreen hover:text-white hover:cursor-pointer transition-all">Организация переезда</p>
+            <p class="font-muller text-md text-darkGray border-2 border-limeGreen rounded-3xl px-4 py-2 hover:bg-limeGreen hover:text-white hover:cursor-pointer transition-all">Выбор кладовки</p>
+        </div>
+        <div class="grid grid-cols-4 gap-12">
+            <div class="flex flex-col pt-12 pb-3 px-4 rounded-xl" style="background: linear-gradient(180deg, #B4DE4E 0%, rgba(73, 73, 73, 0.57) 100%);">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="stroke-white mb-24 mx-auto">
+                    <g opacity="0.3">
+                        <path d="M79.1667 12.5H20.8333C16.231 12.5 12.5 16.231 12.5 20.8333V79.1667C12.5 83.769 16.231 87.5 20.8333 87.5H79.1667C83.769 87.5 87.5 83.769 87.5 79.1667V20.8333C87.5 16.231 83.769 12.5 79.1667 12.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M35.4166 41.6666C38.8684 41.6666 41.6666 38.8684 41.6666 35.4166C41.6666 31.9648 38.8684 29.1666 35.4166 29.1666C31.9648 29.1666 29.1666 31.9648 29.1666 35.4166C29.1666 38.8684 31.9648 41.6666 35.4166 41.6666Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M87.5001 62.5L66.6667 41.6666L20.8334 87.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+                <p class="font-muller text-md font-medium text-white w-3/4">Хранение вещей во время ремонта: три альтернативы</p>
+                <a href="#" class="font-muller text-md font-medium text-white underline text-end hover:text-white/60 transition-all">Читать</a>
+            </div>
+            <div class="flex flex-col pt-12 pb-3 px-4 rounded-xl" style="background: linear-gradient(180deg, #B4DE4E 0%, rgba(73, 73, 73, 0.57) 100%);">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="stroke-white mb-24 mx-auto">
+                    <g opacity="0.3">
+                        <path d="M79.1667 12.5H20.8333C16.231 12.5 12.5 16.231 12.5 20.8333V79.1667C12.5 83.769 16.231 87.5 20.8333 87.5H79.1667C83.769 87.5 87.5 83.769 87.5 79.1667V20.8333C87.5 16.231 83.769 12.5 79.1667 12.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M35.4166 41.6666C38.8684 41.6666 41.6666 38.8684 41.6666 35.4166C41.6666 31.9648 38.8684 29.1666 35.4166 29.1666C31.9648 29.1666 29.1666 31.9648 29.1666 35.4166C29.1666 38.8684 31.9648 41.6666 35.4166 41.6666Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M87.5001 62.5L66.6667 41.6666L20.8334 87.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+                <p class="font-muller text-md font-medium text-white w-3/4">Хранение вещей во время ремонта: три альтернативы</p>
+                <a href="#" class="font-muller text-md font-medium text-white underline text-end hover:text-white/60 transition-all">Читать</a>
+            </div>
+            <div class="flex flex-col pt-12 pb-3 px-4 rounded-xl" style="background: linear-gradient(180deg, #B4DE4E 0%, rgba(73, 73, 73, 0.57) 100%);">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="stroke-white mb-24 mx-auto">
+                    <g opacity="0.3">
+                        <path d="M79.1667 12.5H20.8333C16.231 12.5 12.5 16.231 12.5 20.8333V79.1667C12.5 83.769 16.231 87.5 20.8333 87.5H79.1667C83.769 87.5 87.5 83.769 87.5 79.1667V20.8333C87.5 16.231 83.769 12.5 79.1667 12.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M35.4166 41.6666C38.8684 41.6666 41.6666 38.8684 41.6666 35.4166C41.6666 31.9648 38.8684 29.1666 35.4166 29.1666C31.9648 29.1666 29.1666 31.9648 29.1666 35.4166C29.1666 38.8684 31.9648 41.6666 35.4166 41.6666Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M87.5001 62.5L66.6667 41.6666L20.8334 87.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+                <p class="font-muller text-md font-medium text-white w-3/4">Хранение вещей во время ремонта: три альтернативы</p>
+                <a href="#" class="font-muller text-md font-medium text-white underline text-end hover:text-white/60 transition-all">Читать</a>
+            </div>
+            <div class="flex flex-col pt-12 pb-3 px-4 rounded-xl" style="background: linear-gradient(180deg, #B4DE4E 0%, rgba(73, 73, 73, 0.57) 100%);">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="stroke-white mb-24 mx-auto">
+                    <g opacity="0.3">
+                        <path d="M79.1667 12.5H20.8333C16.231 12.5 12.5 16.231 12.5 20.8333V79.1667C12.5 83.769 16.231 87.5 20.8333 87.5H79.1667C83.769 87.5 87.5 83.769 87.5 79.1667V20.8333C87.5 16.231 83.769 12.5 79.1667 12.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M35.4166 41.6666C38.8684 41.6666 41.6666 38.8684 41.6666 35.4166C41.6666 31.9648 38.8684 29.1666 35.4166 29.1666C31.9648 29.1666 29.1666 31.9648 29.1666 35.4166C29.1666 38.8684 31.9648 41.6666 35.4166 41.6666Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M87.5001 62.5L66.6667 41.6666L20.8334 87.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+                <p class="font-muller text-md font-medium text-white w-3/4">Хранение вещей во время ремонта: три альтернативы</p>
+                <a href="#" class="font-muller text-md font-medium text-white underline text-end hover:text-white/60 transition-all">Читать</a>
+            </div>
+            <div class="flex flex-col pt-12 pb-3 px-4 rounded-xl" style="background: linear-gradient(180deg, #B4DE4E 0%, rgba(73, 73, 73, 0.57) 100%);">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="stroke-white mb-24 mx-auto">
+                    <g opacity="0.3">
+                        <path d="M79.1667 12.5H20.8333C16.231 12.5 12.5 16.231 12.5 20.8333V79.1667C12.5 83.769 16.231 87.5 20.8333 87.5H79.1667C83.769 87.5 87.5 83.769 87.5 79.1667V20.8333C87.5 16.231 83.769 12.5 79.1667 12.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M35.4166 41.6666C38.8684 41.6666 41.6666 38.8684 41.6666 35.4166C41.6666 31.9648 38.8684 29.1666 35.4166 29.1666C31.9648 29.1666 29.1666 31.9648 29.1666 35.4166C29.1666 38.8684 31.9648 41.6666 35.4166 41.6666Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M87.5001 62.5L66.6667 41.6666L20.8334 87.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+                <p class="font-muller text-md font-medium text-white w-3/4">Хранение вещей во время ремонта: три альтернативы</p>
+                <a href="#" class="font-muller text-md font-medium text-white underline text-end hover:text-white/60 transition-all">Читать</a>
+            </div>
+            <div class="flex flex-col pt-12 pb-3 px-4 rounded-xl" style="background: linear-gradient(180deg, #B4DE4E 0%, rgba(73, 73, 73, 0.57) 100%);">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="stroke-white mb-24 mx-auto">
+                    <g opacity="0.3">
+                        <path d="M79.1667 12.5H20.8333C16.231 12.5 12.5 16.231 12.5 20.8333V79.1667C12.5 83.769 16.231 87.5 20.8333 87.5H79.1667C83.769 87.5 87.5 83.769 87.5 79.1667V20.8333C87.5 16.231 83.769 12.5 79.1667 12.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M35.4166 41.6666C38.8684 41.6666 41.6666 38.8684 41.6666 35.4166C41.6666 31.9648 38.8684 29.1666 35.4166 29.1666C31.9648 29.1666 29.1666 31.9648 29.1666 35.4166C29.1666 38.8684 31.9648 41.6666 35.4166 41.6666Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M87.5001 62.5L66.6667 41.6666L20.8334 87.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+                <p class="font-muller text-md font-medium text-white w-3/4">Хранение вещей во время ремонта: три альтернативы</p>
+                <a href="#" class="font-muller text-md font-medium text-white underline text-end hover:text-white/60 transition-all">Читать</a>
+            </div>
+            <div class="flex flex-col pt-12 pb-3 px-4 rounded-xl" style="background: linear-gradient(180deg, #B4DE4E 0%, rgba(73, 73, 73, 0.57) 100%);">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="stroke-white mb-24 mx-auto">
+                    <g opacity="0.3">
+                        <path d="M79.1667 12.5H20.8333C16.231 12.5 12.5 16.231 12.5 20.8333V79.1667C12.5 83.769 16.231 87.5 20.8333 87.5H79.1667C83.769 87.5 87.5 83.769 87.5 79.1667V20.8333C87.5 16.231 83.769 12.5 79.1667 12.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M35.4166 41.6666C38.8684 41.6666 41.6666 38.8684 41.6666 35.4166C41.6666 31.9648 38.8684 29.1666 35.4166 29.1666C31.9648 29.1666 29.1666 31.9648 29.1666 35.4166C29.1666 38.8684 31.9648 41.6666 35.4166 41.6666Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M87.5001 62.5L66.6667 41.6666L20.8334 87.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+                <p class="font-muller text-md font-medium text-white w-3/4">Хранение вещей во время ремонта: три альтернативы</p>
+                <a href="#" class="font-muller text-md font-medium text-white underline text-end hover:text-white/60 transition-all">Читать</a>
+            </div>
+            <div class="flex flex-col pt-12 pb-3 px-4 rounded-xl" style="background: linear-gradient(180deg, #B4DE4E 0%, rgba(73, 73, 73, 0.57) 100%);">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="stroke-white mb-24 mx-auto">
+                    <g opacity="0.3">
+                        <path d="M79.1667 12.5H20.8333C16.231 12.5 12.5 16.231 12.5 20.8333V79.1667C12.5 83.769 16.231 87.5 20.8333 87.5H79.1667C83.769 87.5 87.5 83.769 87.5 79.1667V20.8333C87.5 16.231 83.769 12.5 79.1667 12.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M35.4166 41.6666C38.8684 41.6666 41.6666 38.8684 41.6666 35.4166C41.6666 31.9648 38.8684 29.1666 35.4166 29.1666C31.9648 29.1666 29.1666 31.9648 29.1666 35.4166C29.1666 38.8684 31.9648 41.6666 35.4166 41.6666Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M87.5001 62.5L66.6667 41.6666L20.8334 87.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+                <p class="font-muller text-md font-medium text-white w-3/4">Хранение вещей во время ремонта: три альтернативы</p>
+                <a href="#" class="font-muller text-md font-medium text-white underline text-end hover:text-white/60 transition-all">Читать</a>
+            </div>
+            <div class="flex flex-col pt-12 pb-3 px-4 rounded-xl" style="background: linear-gradient(180deg, #B4DE4E 0%, rgba(73, 73, 73, 0.57) 100%);">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="stroke-white mb-24 mx-auto">
+                    <g opacity="0.3">
+                        <path d="M79.1667 12.5H20.8333C16.231 12.5 12.5 16.231 12.5 20.8333V79.1667C12.5 83.769 16.231 87.5 20.8333 87.5H79.1667C83.769 87.5 87.5 83.769 87.5 79.1667V20.8333C87.5 16.231 83.769 12.5 79.1667 12.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M35.4166 41.6666C38.8684 41.6666 41.6666 38.8684 41.6666 35.4166C41.6666 31.9648 38.8684 29.1666 35.4166 29.1666C31.9648 29.1666 29.1666 31.9648 29.1666 35.4166C29.1666 38.8684 31.9648 41.6666 35.4166 41.6666Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M87.5001 62.5L66.6667 41.6666L20.8334 87.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+                <p class="font-muller text-md font-medium text-white w-3/4">Хранение вещей во время ремонта: три альтернативы</p>
+                <a href="#" class="font-muller text-md font-medium text-white underline text-end hover:text-white/60 transition-all">Читать</a>
+            </div>
+            <div class="flex flex-col pt-12 pb-3 px-4 rounded-xl" style="background: linear-gradient(180deg, #B4DE4E 0%, rgba(73, 73, 73, 0.57) 100%);">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="stroke-white mb-24 mx-auto">
+                    <g opacity="0.3">
+                        <path d="M79.1667 12.5H20.8333C16.231 12.5 12.5 16.231 12.5 20.8333V79.1667C12.5 83.769 16.231 87.5 20.8333 87.5H79.1667C83.769 87.5 87.5 83.769 87.5 79.1667V20.8333C87.5 16.231 83.769 12.5 79.1667 12.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M35.4166 41.6666C38.8684 41.6666 41.6666 38.8684 41.6666 35.4166C41.6666 31.9648 38.8684 29.1666 35.4166 29.1666C31.9648 29.1666 29.1666 31.9648 29.1666 35.4166C29.1666 38.8684 31.9648 41.6666 35.4166 41.6666Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M87.5001 62.5L66.6667 41.6666L20.8334 87.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+                <p class="font-muller text-md font-medium text-white w-3/4">Хранение вещей во время ремонта: три альтернативы</p>
+                <a href="#" class="font-muller text-md font-medium text-white underline text-end hover:text-white/60 transition-all">Читать</a>
+            </div>
+            <div class="flex flex-col pt-12 pb-3 px-4 rounded-xl" style="background: linear-gradient(180deg, #B4DE4E 0%, rgba(73, 73, 73, 0.57) 100%);">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="stroke-white mb-24 mx-auto">
+                    <g opacity="0.3">
+                        <path d="M79.1667 12.5H20.8333C16.231 12.5 12.5 16.231 12.5 20.8333V79.1667C12.5 83.769 16.231 87.5 20.8333 87.5H79.1667C83.769 87.5 87.5 83.769 87.5 79.1667V20.8333C87.5 16.231 83.769 12.5 79.1667 12.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M35.4166 41.6666C38.8684 41.6666 41.6666 38.8684 41.6666 35.4166C41.6666 31.9648 38.8684 29.1666 35.4166 29.1666C31.9648 29.1666 29.1666 31.9648 29.1666 35.4166C29.1666 38.8684 31.9648 41.6666 35.4166 41.6666Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M87.5001 62.5L66.6667 41.6666L20.8334 87.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+                <p class="font-muller text-md font-medium text-white w-3/4">Хранение вещей во время ремонта: три альтернативы</p>
+                <a href="#" class="font-muller text-md font-medium text-white underline text-end hover:text-white/60 transition-all">Читать</a>
+            </div>
+            <div class="flex flex-col pt-12 pb-3 px-4 rounded-xl" style="background: linear-gradient(180deg, #B4DE4E 0%, rgba(73, 73, 73, 0.57) 100%);">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="stroke-white mb-24 mx-auto">
+                    <g opacity="0.3">
+                        <path d="M79.1667 12.5H20.8333C16.231 12.5 12.5 16.231 12.5 20.8333V79.1667C12.5 83.769 16.231 87.5 20.8333 87.5H79.1667C83.769 87.5 87.5 83.769 87.5 79.1667V20.8333C87.5 16.231 83.769 12.5 79.1667 12.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M35.4166 41.6666C38.8684 41.6666 41.6666 38.8684 41.6666 35.4166C41.6666 31.9648 38.8684 29.1666 35.4166 29.1666C31.9648 29.1666 29.1666 31.9648 29.1666 35.4166C29.1666 38.8684 31.9648 41.6666 35.4166 41.6666Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M87.5001 62.5L66.6667 41.6666L20.8334 87.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+                <p class="font-muller text-md font-medium text-white w-3/4">Хранение вещей во время ремонта: три альтернативы</p>
+                <a href="#" class="font-muller text-md font-medium text-white underline text-end hover:text-white/60 transition-all">Читать</a>
+            </div>
+        </div>
+        <a href="#" class="text-limeGreen font-montse text-sm underline hover:text-limeGreen/40 transition-all mx-auto my-16">Показать еще</a>
+    </section>
+    <footer class="w-screen bg-[#545454]">
+        <div class="container flex flex-col font-montse py-8">
+            <div class="flex justify-between">
+                <p class="text-limeGreen font-bold text-sm italic">кладовка 😎<br>на районе</p>
+                <ul class="font-semibold text-white text-sm">
+                    <li class="mb-2"><a href="#" class="hover:text-limeGreen transition-all">О нас</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-limeGreen transition-all">Преимущества кладовок</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-limeGreen transition-all">Что нельзя хранить</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-limeGreen transition-all">FAQ</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-limeGreen transition-all">Блог</a></li>
+                    <li><a href="#" class="hover:text-limeGreen transition-all">Контакты</a></li>
+                </ul>
+                <div class="flex flex-col">
+                    <p class="font-medium text-white text-sm mb-2">Наши соцсети</p>
+                    <div class="flex">
+                        <a href="#" class="bg-[#D9D9D9] w-[22px] h-[22px] mr-2 hover:bg-limeGreen transition-all"></a>
+                        <a href="#" class="bg-[#D9D9D9] w-[22px] h-[22px] hover:bg-limeGreen transition-all"></a>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <a href="tel:+74956751825" class="text-white text-sm font-medium hover:text-limeGreen transition-all mb-2">+7 (495) 675 18 25</a>
+                    <a href="mailto:info@kladovka.ru" class="text-white text-sm font-medium hover:text-limeGreen transition-all">info@kladovka.ru</a>
+                </div>
+                <button class="text-sm font-medium text-darkGray py-2 px-4 bg-white rounded-md h-max hover:bg-limeGreen hover:text-white transition-all">Вход</button>
+            </div>
+            <div class="flex mt-12">
+                <p class="text-white text-sm mr-3">©2022 Кладовка на районе. All rights reserved.</p>
+                <a href="#" class="text-white text-sm font-medium hover:text-limeGreen transition-all mr-3">Terms of Use</a>
+                <a href="#" class="text-white text-sm font-medium hover:text-limeGreen transition-all mr-3">Privacy</a>
+                <a href="#" class="text-white text-sm font-medium hover:text-limeGreen transition-all">Cookies</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('link').getAttribute('href') == window.location.pathname
+            ? document.getElementById('link').classList.add('text-darkGray/80')
+            : null
+    </script>
+</body>
+</html>
