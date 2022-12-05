@@ -90,3 +90,22 @@
   width: 80%;
   transition-delay: .375s;
 }
+
+@media screen and (max-width: 638px) {
+  .cross span:nth-child(1) {
+    top: 30%;
+    left: 13px;
+  }
+
+  .burger-menu.opened .cross span:nth-child(1) {
+    height: 67%;
+  }
+
+  .cross span:nth-child(2) {
+    left: 5%;
+  }
+
+  .burger span {
+    margin-bottom: 3px;
+  }
+}

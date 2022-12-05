@@ -29,7 +29,7 @@
                     },
                     container: {
                         center: true,
-                        padding: '2rem'
+                        padding: '1rem'
                     },
                     
                 }
@@ -47,8 +47,8 @@
 <body class="overflow-x-hidden">
     <header class="w-screen h-[82px] bg-white flex items-center shadow-md fixed z-20">
         <div class="container flex justify-between max-sm:pl-[0.5rem] max-sm:pr-[1.3rem]">
-            <nav class="flex items-center">
-                <div class="burger-menu cursor-pointer w-[50px] max-sm:w-[60px] h-[50px] relative flex items-center justify-center">
+            <nav class="flex items-center max-sm:w-[40%]">
+                <div class="burger-menu cursor-pointer w-[50px] max-sm:w-[40px] h-[50px] max-sm:h-[40px] relative flex items-center justify-center">
                     <div class="burger max-sm:w-[60%]">
                         <span></span>
                         <span></span>
@@ -59,15 +59,20 @@
                         <span></span>
                     </div>
                 </div>
-                <p class="font-montse font-bold text-darkGray text-lg leading-[1rem] ml-20 max-sm:ml-0 max-sm:text-sm max-sm:leading-none">кладовка&#x1F60E</span><br>на районе</p>
+                <p class="font-montse font-bold text-darkGray text-lg leading-[1rem] ml-20 max-sm:w-[70%] max-sm:ml-0 max-sm:text-sm max-sm:leading-none">кладовка&#x1F60E</span><br>на районе</p>
             </nav>
             <div class="flex items-center">
                 <div class="font-montse">
                     <a href="tel:+74956751825" class="font-medium max-sm:text-sm">+7 (495) 675 18 25</a>
                     <p class="font-light max-sm:text-sm">работаем 24/7 💪</p>
                 </div>
-                <button class="bg-darkGray rounded text-limeGreen font-montse font-medium py-1.5 px-4 ml-20
-                hover:bg-limeGreen hover:text-darkGray transition-all max-sm:ml-2 max-sm:py-1 max-sm:px-2 max-sm:text-sm">Вход</button>
+                <button class="bg-darkGray rounded text-limeGreen font-montse font-medium py-1.5 px-4 ml-20 group
+                    hover:bg-limeGreen hover:text-darkGray transition-all max-sm:ml-2 max-sm:py-1 max-sm:px-2 max-sm:text-sm max-sm:order-first max-sm:mr-3">
+                    <span class="max-sm:hidden">Вход</span> 
+                    <svg viewBox="0 0 1024 1024" class="hidden max-sm:block h-[20px] fill-limeGreen group-hover:fill-white transition-all">
+                        <path  d="M670.1 278.4c0 8.8-.6 17.6-1.7 26.3.5-3.5 1-7.1 1.4-10.6-2.4 17.4-7 34.3-13.7 50.5 1.3-3.2 2.7-6.4 4-9.6-6.7 15.8-15.3 30.6-25.8 44.2l6.3-8.1c-10.4 13.4-22.5 25.5-35.9 35.9l8.1-6.3c-13.6 10.4-28.4 19.1-44.2 25.8 3.2-1.3 6.4-2.7 9.6-4-16.2 6.7-33.1 11.3-50.5 13.7 3.5-.5 7.1-1 10.6-1.4-17.5 2.3-35.1 2.3-52.6 0 3.5.5 7.1 1 10.6 1.4-17.4-2.4-34.3-7-50.5-13.7 3.2 1.3 6.4 2.7 9.6 4-15.8-6.7-30.6-15.3-44.2-25.8l8.1 6.3c-13.4-10.4-25.5-22.5-35.9-35.9l6.3 8.1c-10.4-13.6-19.1-28.4-25.8-44.2 1.3 3.2 2.7 6.4 4 9.6-6.7-16.2-11.3-33.1-13.7-50.5.5 3.5 1 7.1 1.4 10.6-2.3-17.5-2.3-35.1 0-52.6-.5 3.5-1 7.1-1.4 10.6 2.4-17.4 7-34.3 13.7-50.5-1.3 3.2-2.7 6.4-4 9.6 6.7-15.8 15.3-30.6 25.8-44.2l-6.3 8.1c10.4-13.4 22.5-25.5 35.9-35.9l-8.1 6.3c13.6-10.4 28.4-19.1 44.2-25.8-3.2 1.3-6.4 2.7-9.6 4 16.2-6.7 33.1-11.3 50.5-13.7-3.5.5-7.1 1-10.6 1.4 17.5-2.3 35.1-2.3 52.6 0-3.5-.5-7.1-1-10.6-1.4 17.4 2.4 34.3 7 50.5 13.7-3.2-1.3-6.4-2.7-9.6-4 15.8 6.7 30.6 15.3 44.2 25.8l-8.1-6.3c13.4 10.4 25.5 22.5 35.9 35.9l-6.3-8.1c10.4 13.6 19.1 28.4 25.8 44.2-1.3-3.2-2.7-6.4-4-9.6 6.7 16.2 11.3 33.1 13.7 50.5-.5-3.5-1-7.1-1.4-10.6 1.1 8.7 1.6 17.5 1.7 26.3.1 20.9 18.3 41 40 40 21.6-1 40.1-17.6 40-40-.2-47.9-14.6-96.9-42.8-135.9-7.6-10.5-15.7-20.8-24.7-30.1-9.1-9.4-19.1-17.5-29.5-25.4-18.9-14.4-40-25-62.4-33.2-90.3-33.1-199.2-3.6-260.3 70.8-8.4 10.2-16.4 20.8-23.2 32.2-6.8 11.3-12.1 23.3-17 35.5-9.2 22.6-13.9 46.6-15.8 70.9-3.7 47.6 8.7 97.3 33.5 138.1 23.9 39.4 60 73.2 102.2 92.3 12.4 5.6 25.1 10.8 38.3 14.5 13.1 3.6 26.4 5.6 39.9 7.2 24.6 2.9 49.7.9 74-4 92.3-18.8 169.6-98.3 183.9-191.6 2.1-13.6 3.7-27.2 3.7-41 .1-20.9-18.5-41-40-40-21.6.7-39.8 17.3-39.8 39.7zm132.7 625.3H289.7c-22.7 0-45.4.2-68.1 0-2.5 0-5-.2-7.4-.5 3.5.5 7.1 1 10.6 1.4-4-.6-7.8-1.7-11.5-3.2 3.2 1.3 6.4 2.7 9.6 4-4-1.7-7.7-3.9-11.2-6.6l8.1 6.3c-3-2.5-5.8-5.2-8.2-8.2l6.3 8.1c-2.7-3.5-4.8-7.2-6.6-11.2 1.3 3.2 2.7 6.4 4 9.6-1.5-3.7-2.5-7.6-3.2-11.5.5 3.5 1 7.1 1.4 10.6-1.6-12.1-.5-24.9-.5-37.1v-42.8c0-10.7.6-21.3 2-31.9-.5 3.5-1 7.1-1.4 10.6 2.8-20.5 8.2-40.6 16.3-59.7-1.3 3.2-2.7 6.4-4 9.6 7.8-18.2 17.8-35.3 29.9-51l-6.3 8.1c12.1-15.5 26-29.5 41.6-41.6L283 673c15.7-12.1 32.8-22.1 51-29.9-3.2 1.3-6.4 2.7-9.6 4 19.1-8 39.1-13.5 59.7-16.3-3.5.5-7.1 1-10.6 1.4 14.8-1.9 29.5-2 44.4-2h183c16.5 0 32.9-.1 49.4 2-3.5-.5-7.1-1-10.6-1.4 20.5 2.8 40.6 8.2 59.7 16.3-3.2-1.3-6.4-2.7-9.6-4 18.2 7.8 35.3 17.8 51 29.9l-8.1-6.3c15.5 12.1 29.5 26 41.6 41.6l-6.3-8.1c12.1 15.7 22.1 32.8 29.9 51-1.3-3.2-2.7-6.4-4-9.6 8 19.1 13.5 39.1 16.3 59.7-.5-3.5-1-7.1-1.4-10.6 1.9 15.1 2 30.1 2 45.3v49.5c0 5.7.2 11.4-.5 17 .5-3.5 1-7.1 1.4-10.6-.6 4-1.7 7.8-3.2 11.5 1.3-3.2 2.7-6.4 4-9.6-1.7 4-3.9 7.7-6.6 11.2l6.3-8.1c-2.5 3-5.2 5.8-8.2 8.2l8.1-6.3c-3.5 2.7-7.2 4.8-11.2 6.6 3.2-1.3 6.4-2.7 9.6-4-3.7 1.5-7.6 2.5-11.5 3.2 3.5-.5 7.1-1 10.6-1.4-2.2.3-4.5.4-6.8.5-10.3.1-20.9 4.4-28.3 11.7-6.9 6.9-12.2 18.3-11.7 28.3 1 21.4 17.6 40.3 40 40 38.9-.6 73.1-26 84.5-63.3 4.5-14.8 3.5-30.7 3.5-45.9 0-34.8 1.1-69.3-4.9-103.8-8.8-50.5-34.2-98-69-135.3-34.8-37.3-81.6-64.7-131.1-76.9-28.4-7-57-8.1-86-8.1H422.4c-29.7 0-59.2 1.4-88.1 9.1-49.1 13-95.3 40.7-129.4 78.3-34.4 37.9-59.3 85.5-67.4 136.3-5.4 34.1-4.3 68.3-4.3 102.7 0 15.8-.9 32.3 4.8 47.4 7.4 19.4 19.2 34.7 36.5 46.2 13.5 8.9 30.6 13.2 46.6 13.4 7.8.1 15.6 0 23.4 0h558.4c20.9 0 41-18.4 40-40-1-21.8-17.6-40.1-40.1-40.1z"/>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
@@ -103,14 +108,14 @@
         <div class="flex pt-11 justify-between max-sm:flex-col">
             <div class="w-[48%] flex flex-col font-montse max-sm:w-full">
                 <p class="font-semibold text-darkGray text-lg leading-[1.125rem] mb-4">Выберите кладовку <br>нужного размера:</p>
-                <div class="flex justify-between mb-10 max-sm:flex-col max-sm:mb-3">
+                <div class="flex justify-between mb-10 max-xl:flex-col max-sm:mb-3">
                     <div class="font-medium text-darkGray flex">
                         <p class="bg-cloudSky rounded-xl py-2 px-3 mr-4 hover:bg-cloudSky/50 transition-all cursor-pointer">Все кладовки</p>
                         <p class="bg-cloudSky rounded-xl py-2 px-3 mr-4 hover:bg-cloudSky/50 transition-all cursor-pointer">M</p>
                         <p class="bg-cloudSky rounded-xl py-2 px-3 mr-4 hover:bg-cloudSky/50 transition-all cursor-pointer">XL</p>
                         <p class="bg-cloudSky rounded-xl py-2 px-3 hover:bg-cloudSky/50 transition-all cursor-pointer">S</p>
                     </div>
-                    <div class="flex items-center max-sm:mx-auto max-sm:mt-3">
+                    <div class="flex items-center max-sm:mx-auto max-sm:mt-3 max-xl:mt-3">
                         <svg width="12" height="12" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="fill-[#B4DE4E]" d="M5.6249 2.70825C5.6249 2.87401 5.55905 3.03298 5.44184 3.15019C5.32463 3.2674 5.16566 3.33325 4.9999 3.33325C4.83414 3.33325 4.67517 3.2674 4.55796 3.15019C4.44075 3.03298 4.3749 2.87401 4.3749 2.70825C4.3749 2.54249 4.44075 2.38352 4.55796 2.26631C4.67517 2.1491 4.83414 2.08325 4.9999 2.08325C5.16566 2.08325 5.32463 2.1491 5.44184 2.26631C5.55905 2.38352 5.6249 2.54249 5.6249 2.70825ZM9.9999 7.91658V5.14158C10.0154 3.85719 9.54453 2.61446 8.6817 1.6629C7.81887 0.711353 6.62802 0.121432 5.34823 0.0115827C4.63392 -0.0383933 3.91721 0.0656409 3.24658 0.316646C2.57596 0.567652 1.96707 0.959773 1.46111 1.46648C0.95516 1.97318 0.563942 2.58265 0.313931 3.25365C0.0639201 3.92464 -0.0390514 4.64151 0.0119834 5.35575C0.19615 8.00325 2.53407 9.99992 5.45115 9.99992H7.91657C8.4689 9.99925 8.99842 9.77955 9.38898 9.38899C9.77953 8.99843 9.99924 8.46891 9.9999 7.91658ZM5.29157 0.843249C6.36092 0.937848 7.35487 1.43363 8.07369 2.23098C8.79251 3.02833 9.18295 4.06817 9.16657 5.14158V7.91658C9.16657 8.2481 9.03487 8.56605 8.80045 8.80047C8.56603 9.03489 8.24809 9.16658 7.91657 9.16658H5.45115C2.93698 9.16658 0.9999 7.54158 0.84365 5.29825C0.80263 4.72683 0.879889 4.15308 1.0706 3.61286C1.26131 3.07264 1.56138 2.57755 1.95206 2.15853C2.34273 1.7395 2.81562 1.40555 3.34118 1.17752C3.86674 0.949492 4.43367 0.832295 5.00657 0.833249C5.10115 0.833249 5.19657 0.836999 5.29157 0.843249ZM5.83323 7.49992V4.99992C5.83323 4.7789 5.74544 4.56694 5.58916 4.41066C5.43288 4.25438 5.22091 4.16658 4.9999 4.16658H4.58323C4.47273 4.16658 4.36675 4.21048 4.28861 4.28862C4.21047 4.36676 4.16657 4.47274 4.16657 4.58325C4.16657 4.69376 4.21047 4.79974 4.28861 4.87788C4.36675 4.95602 4.47273 4.99992 4.58323 4.99992H4.9999V7.49992C4.9999 7.61042 5.0438 7.7164 5.12194 7.79454C5.20008 7.87268 5.30606 7.91658 5.41657 7.91658C5.52707 7.91658 5.63305 7.87268 5.71119 7.79454C5.78934 7.7164 5.83323 7.61042 5.83323 7.49992Z"/>
                         </svg>
@@ -250,12 +255,12 @@
     <section class="container flex flex-col py-32 font-montse text-darkGray">
         <p class="font-bold text-3xl mb-7 max-sm:text-center">О складе</p>
         <div class="flex justify-between max-sm:flex-col">
-            <p class="font-normal text-md leading-6 w-2/5 max-sm:w-full max-sm:text-center max-sm:mb-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p class="font-normal text-md leading-6 w-2/5 max-sm:w-full max-sm:text-center max-sm:mb-12 max-lg:mr-24">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="flex flex-col items-end max-sm:items-center">
+            <div class="flex flex-col items-end max-sm:items-center max-md:items-start">
                 <div class="flex flex-wrap">
-                    <img src="./assets/images/about-storage-image.png" class="rounded mr-6 max-sm:w-[28%]" alt="Here must be about storage image">
-                    <img src="./assets/images/about-storage-image.png" class="rounded mr-6 max-sm:w-[28%]" alt="Here must be about storage image">
+                    <img src="./assets/images/about-storage-image.png" class="rounded mr-6 max-sm:w-[28%] max-lg:mb-6 max-sm:mb-0" alt="Here must be about storage image">
+                    <img src="./assets/images/about-storage-image.png" class="rounded mr-6 max-sm:w-[28%] max-lg:mb-6 max-sm:mb-0" alt="Here must be about storage image">
                     <img src="./assets/images/about-storage-image-2.png" class="rounded max-sm:w-[28%]" alt="Here must be about storage image">
                 </div>
                 <div class="flex mt-4">
@@ -273,12 +278,12 @@
             </div>
         </div>
         <div class="flex justify-between items-center mt-32 max-sm:flex-col">
-            <div class="flex justify-between flex-wrap">
-                <div class="flex flex-col before:content-['★'] before:absolute before:text-4xl before:text-limeGreen before:left-0 pl-10 relative max-sm:mb-6">
+            <div class="flex justify-between flex-wrap w-3/4">
+                <div class="flex flex-col before:content-['★'] before:absolute before:text-4xl before:text-limeGreen before:left-0 pl-10 relative max-lg:mb-6">
                     <p class="text-3xl font-medium mb-3">17°С</p>
                     <p>Сейчас температура<br>на складе</p>
                 </div>
-                <div class="flex flex-col before:content-['★'] before:absolute before:text-4xl before:text-limeGreen before:left-0 pl-10 relative max-sm:mb-6">
+                <div class="flex flex-col before:content-['★'] before:absolute before:text-4xl before:text-limeGreen before:left-0 pl-10 relative max-lg:mb-6">
                     <p class="text-3xl font-medium mb-3">51 %</p>
                     <p>Сейчас температура<br>на складе</p>
                 </div>
@@ -287,7 +292,7 @@
                     <p>Сейчас температура<br>на складе</p>
                 </div>
             </div>
-            <div class="text-limeGreen flex flex-col max-sm:mt-12 max-sm:text-center">
+            <div class="text-limeGreen flex flex-col max-sm:mt-12 max-lg:text-center">
                 <a href="" class="mb-3 hover:text-limeGreen/40 transition-all underline">Позвонить</a>
                 <a href="" class="hover:text-limeGreen/40 transition-all underline">Проложить маршрут</a>
             </div>
@@ -384,41 +389,41 @@
                 <p class="font-bold text-md">Где можно посмотреть тарифы на хранение?</p>
                 <button class="faq-btn text-white rounded-full bg-limeGreen text-2xl w-[32px] font-bold hover:bg-white hover:text-limeGreen transition-all">+</button>
             </div>
-            <p class="pointer-events-none w-2/3 mt-2 transition-all max-sm:w-full" style="opacity: 0; height: 0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit at aliquid perferendis inventore. Fugit eius illo alias iusto sequi totam hic, impedit in laudantium at perspiciatis, consectetur deleniti repellendus dolore facere a autem quibusdam numquam dicta recusandae aliquam sed maiores.</p>
+            <p class="pointer-events-none w-2/3 mt-2 transition-all max-sm:w-full hidden" style="opacity: 0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit at aliquid perferendis inventore. Fugit eius illo alias iusto sequi totam hic, impedit in laudantium at perspiciatis, consectetur deleniti repellendus dolore facere a autem quibusdam numquam dicta recusandae aliquam sed maiores.</p>
         </div>
         <div class="bg-lightGray/20 flex flex-col rounded-xl px-16 py-4 mb-4 faq-item hover:bg-lightGray/10 hover:cursor-pointer transition-all max-sm:px-4">
             <div class="flex justify-between items-center">
                 <p class="font-bold text-md">Где можно посмотреть тарифы на хранение?</p>
                 <button class="faq-btn text-white rounded-full bg-limeGreen text-2xl w-[32px] font-bold hover:bg-white hover:text-limeGreen transition-all">+</button>
             </div>
-            <p class="pointer-events-none w-2/3 mt-2 transition-all max-sm:w-full" style="opacity: 0; height: 0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit at aliquid perferendis inventore. Fugit eius illo alias iusto sequi totam hic, impedit in laudantium at perspiciatis, consectetur deleniti repellendus dolore facere a autem quibusdam numquam dicta recusandae aliquam sed maiores.</p>
+            <p class="pointer-events-none w-2/3 mt-2 transition-all max-sm:w-full hidden" style="opacity: 0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit at aliquid perferendis inventore. Fugit eius illo alias iusto sequi totam hic, impedit in laudantium at perspiciatis, consectetur deleniti repellendus dolore facere a autem quibusdam numquam dicta recusandae aliquam sed maiores.</p>
         </div>
         <div class="bg-lightGray/20 flex flex-col rounded-xl px-16 py-4 mb-4 faq-item hover:bg-lightGray/10 hover:cursor-pointer transition-all max-sm:px-4">
             <div class="flex justify-between items-center">
                 <p class="font-bold text-md">Где можно посмотреть тарифы на хранение?</p>
                 <button class="faq-btn text-white rounded-full bg-limeGreen text-2xl w-[32px] font-bold hover:bg-white hover:text-limeGreen transition-all">+</button>
             </div>
-            <p class="pointer-events-none w-2/3 mt-2 transition-all max-sm:w-full" style="opacity: 0; height: 0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit at aliquid perferendis inventore. Fugit eius illo alias iusto sequi totam hic, impedit in laudantium at perspiciatis, consectetur deleniti repellendus dolore facere a autem quibusdam numquam dicta recusandae aliquam sed maiores.</p>
+            <p class="pointer-events-none w-2/3 mt-2 transition-all max-sm:w-full hidden" style="opacity: 0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit at aliquid perferendis inventore. Fugit eius illo alias iusto sequi totam hic, impedit in laudantium at perspiciatis, consectetur deleniti repellendus dolore facere a autem quibusdam numquam dicta recusandae aliquam sed maiores.</p>
         </div>
         <div class="bg-lightGray/20 flex flex-col rounded-xl px-16 py-4 faq-item hover:bg-lightGray/10 hover:cursor-pointer transition-all max-sm:px-4">
             <div class="flex justify-between items-center">
                 <p class="font-bold text-md">Где можно посмотреть тарифы на хранение?</p>
                 <button class="faq-btn text-white rounded-full bg-limeGreen text-2xl w-[32px] font-bold hover:bg-white hover:text-limeGreen transition-all">+</button>
             </div>
-            <p class="pointer-events-none w-2/3 mt-2 transition-all max-sm:w-full" style="opacity: 0; height: 0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit at aliquid perferendis inventore. Fugit eius illo alias iusto sequi totam hic, impedit in laudantium at perspiciatis, consectetur deleniti repellendus dolore facere a autem quibusdam numquam dicta recusandae aliquam sed maiores.</p>
+            <p class="pointer-events-none w-2/3 mt-2 transition-all max-sm:w-full hidden" style="opacity: 0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit at aliquid perferendis inventore. Fugit eius illo alias iusto sequi totam hic, impedit in laudantium at perspiciatis, consectetur deleniti repellendus dolore facere a autem quibusdam numquam dicta recusandae aliquam sed maiores.</p>
         </div>
     </section>
     <footer class="w-screen bg-[#545454] mt-32">
-        <div class="container flex flex-col font-montse py-8">
+        <div class="container flex flex-col font-montse py-8 max-sm:px-[2rem]">
             <div class="flex justify-between max-sm:w-full max-sm:flex-wrap max-sm">
                 <p class="text-limeGreen font-bold text-sm max-sm:order-first">кладовка 😎<br>на районе</p>
                 <ul class="font-semibold text-white text-sm max-sm:order-3 max-sm:columns-2 max-sm:mb-6 max-sm:w-full">
                     <li class="mb-2"><a href="#" class="hover:text-limeGreen transition-all">О нас</a></li>
                     <li class="mb-2"><a href="#" class="hover:text-limeGreen transition-all">Преимущества кладовок</a></li>
                     <li class="mb-2"><a href="#" class="hover:text-limeGreen transition-all">Что нельзя хранить</a></li>
-                    <li class="mb-2"><a href="#" class="hover:text-limeGreen transition-all">FAQ</a></li>
-                    <li class="mb-2"><a href="#" class="hover:text-limeGreen transition-all">Блог</a></li>
-                    <li><a href="#" class="hover:text-limeGreen transition-all">Контакты</a></li>
+                    <li class="mb-2 max-sm:text-end"><a href="#" class="hover:text-limeGreen transition-all">FAQ</a></li>
+                    <li class="mb-2 max-sm:text-end"><a href="#" class="hover:text-limeGreen transition-all">Блог</a></li>
+                    <li class="max-sm:text-end"><a href="#" class="hover:text-limeGreen transition-all">Контакты</a></li>
                 </ul>
                 <div class="flex flex-col max-sm:order-4">
                     <p class="font-medium text-white text-sm mb-2">Наши соцсети</p>
