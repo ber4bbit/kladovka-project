@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/burger/burger.css">
     <script src="./js/burgerMenuHandler.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Публикации</title>
+    <title>О нас</title>
     <script>
         tailwind.config = {
             theme: {
@@ -16,6 +16,7 @@
                     fontFamily: {
                         montse: ['Montserrat', 'sans-serif'],
                         muller: ['Muller'],
+                        mullerBold: ['Muller-Bold'],
                         proxima: ['Proxima Nova']
                     },
                     colors: {
@@ -27,7 +28,8 @@
                         lightGray: '#C7C7C7'
                     },
                     container: {
-                        center: true
+                        center: true,
+                        padding: '2rem'
                     },   
                 }
             }
@@ -35,112 +37,114 @@
     </script>
 </head>
 <body class="overflow-x-hidden">
-    <header class="w-screen h-[82px] bg-white flex justify-around items-center shadow-md fixed z-20">
-        <nav class="flex items-center">
-            <div class="burger-menu cursor-pointer w-[50px] h-[50px] relative flex items-center justify-center">
-                <div class="burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+    <header class="w-screen h-[82px] bg-white flex items-center shadow-md fixed z-20">
+        <div class="container flex justify-between max-sm:pl-[0.5rem] max-sm:pr-[1.3rem]">
+            <nav class="flex items-center">
+                <div class="burger-menu cursor-pointer w-[50px] max-sm:w-[60px] h-[50px] relative flex items-center justify-center">
+                    <div class="burger max-sm:w-[60%]">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="cross max-sm:w-[84%]">
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
-                <div class="cross">
-                    <span></span>
-                    <span></span>
+                <p class="font-montse font-bold text-darkGray text-lg leading-[1rem] ml-20 max-sm:ml-0 max-sm:text-sm max-sm:leading-none">кладовка&#x1F60E</span><br>на районе</p>
+            </nav>
+            <div class="flex items-center">
+                <div class="font-montse">
+                    <a href="tel:+74956751825" class="font-medium max-sm:text-sm">+7 (495) 675 18 25</a>
+                    <p class="font-light max-sm:text-sm">работаем 24/7 💪</p>
                 </div>
+                <button class="bg-darkGray rounded text-limeGreen font-montse font-medium py-1.5 px-4 ml-20
+                hover:bg-limeGreen hover:text-darkGray transition-all max-sm:ml-2 max-sm:py-1 max-sm:px-2 max-sm:text-sm">Вход</button>
             </div>
-            <p class="font-montse font-bold italic text-darkGray text-lg leading-[1rem] ml-20">кладовка <span class="not-italic">&#x1F60E</span><br>на районе</p>
-        </nav>
-        <div class="flex items-center">
-            <div class="font-montse">
-                <a href="tel:+74956751825" class="font-medium">+7 (495) 675 18 25</a>
-                <p class="font-light">работаем 24/7 💪</p>
-            </div>
-            <button class="bg-darkGray rounded text-limeGreen font-montse font-medium py-1.5 px-4 ml-20
-            hover:bg-limeGreen hover:text-darkGray transition-all">Вход</button>
         </div>
     </header>
     <section class="w-screen pt-[calc(82px+40px)] bg-[url(./assets/images/about-bg-image.png)] bg-no-repeat bg-cover bg-bottom pb-36">
-        <div class="container flex flex-col">
-            <p class="font-proxima text-white/50 mb-20">
-                <a href="/homePage.html" class="hover:text-white transition-all">Главная</a>
+        <div class="container flex flex-col max-sm:items-center max-sm:text-center">
+            <p class="font-proxima mb-20 text-white/50">
+                <a href="/homePage.html" class="hover:text-white transition-all mr-2">Главная</a>
                 /
-                <a href="/aboutPage.html" class="hover:text-white transition-all" id="link">О нас</a>
+                <span class="text-white/80 ml-2">О нас</span>
             </p>
-            <h1 class="font-montse italic text-3xl font-bold mb-10 text-white">О компании</h1>
+            <h1 class="font-montse text-3xl font-bold mb-10 text-white">О компании</h1>
             <p class="font-montse font-medium text-white text-lg">Обеспечиваем безопасное хранение вещей недалеко от дома</p>
         </div>
     </section>
-    <section class="w-screen mt-16 flex flex-col">
-        <p class="font-montse text-darkGray text-3xl italic font-bold ml-48 mb-6">кладовка 😎<br>на районе</p>
-        <div class="flex justify-between items-center">
-            <div class="flex flex-col font-muller text-lg text-darkGray w-[35%] ml-48">
+    <section class="container mt-16 flex flex-col">
+        <p class="font-montse text-darkGray text-3xl font-bold mb-6 max-sm:text-center">кладовка 😎<br>на районе</p>
+        <div class="flex justify-between items-center max-sm:flex-col">
+            <div class="flex flex-col font-muller text-lg text-darkGray w-[45%] max-sm:order-last max-sm:w-full max-sm:mt-4">
                 <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, alias nesciunt? Temporibus unde dolores illo error numquam, provident earum ipsa culpa nisi dignissimos corrupti necessitatibus voluptatum obcaecati excepturi debitis tempore dolor tempora architecto nesciunt. Cupiditate veritatis non adipisci velit recusandae.</p>
                 <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sunt iste repellat officia quos harum hic, quod ipsa blanditiis eum quisquam nam debitis impedit in provident asperiores beatae labore est non. Possimus, expedita vitae?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, id delectus quibusdam sint quasi ab fuga sunt distinctio minus voluptatem minima, possimus saepe molestias repellendus natus soluta a repellat exercitationem consectetur! Voluptatem eveniet illo hic error? Veniam commodi blanditiis corrupti.</p>
             </div>
-            <img src="./assets/images/about-image.png" alt="Here must be about us article image" class="w-[50%]">
+            <img src="./assets/images/about-image.png" alt="Here must be about us article image" class="w-[50%] max-sm:w-full">
         </div>
     </section>
     <section class="container mt-28 font-muller flex flex-col">
-        <div class="flex justify-around mb-12">
+        <div class="flex justify-between mb-20 max-sm:flex-col">
             <div class="flex flex-col items-center">
-                <p class="text-limeGreen font-bold text-[140px] leading-[0.65]">15</p>
-                <p class="text-white text-lg bg-black w-[6.2rem] leading-none">лет работы</p>
+                <p class="text-limeGreen font-bold font-mullerBold text-[140px] leading-[0.75]">15</p>
+                <p class="text-white text-lg bg-darkGray w-[6.2rem] leading-none max-sm:mb-12">лет работы</p>
             </div>
             <div class="flex flex-col items-center">
-                <p class="text-limeGreen font-bold text-[140px] leading-[0.65]">150</p>
-                <p class="text-white text-lg bg-black w-[6.2rem] leading-none text-center">складов</p>
+                <p class="text-limeGreen font-bold font-mullerBold text-[140px] leading-[0.75]">150</p>
+                <p class="text-white text-lg bg-darkGray w-[6.2rem] leading-none text-center max-sm:mb-12">складов</p>
             </div>
             <div class="flex flex-col items-center">
-                <p class="text-limeGreen font-bold text-[140px] leading-[0.65]">500</p>
-                <p class="text-white text-lg bg-black w-[6.2rem] leading-none text-center">ячеек</p>
+                <p class="text-limeGreen font-bold font-mullerBold text-[140px] leading-[0.75]">500</p>
+                <p class="text-white text-lg bg-darkGray w-[6.2rem] leading-none text-center">ячеек</p>
             </div>
         </div>
-        <div class="grid grid-cols-3 gap-4 mb-24">
-            <div class="bg-[url(./assets/images/about-image-2.png)] bg-no-repeat bg-cover after:content-['.'] after:invisible col-span-2 row-span-3 h-[600px]"></div>
-            <div class="bg-[url(./assets/images/about-image.png)] bg-no-repeat bg-cover after:content-['.'] after:invisible"></div>
-            <div class="bg-[url(./assets/images/essay-image.png)] bg-no-repeat bg-cover after:content-['.'] after:invisible"></div>
-            <div class="bg-[url(./assets/images/about-image.png)] bg-no-repeat bg-cover after:content-['.'] after:invisible"></div>
+        <div class="grid grid-cols-3 gap-4 mb-24 max-sm:grid-cols-1">
+            <div class="bg-[url(./assets/images/about-image-2.png)] bg-no-repeat bg-cover after:content-['.'] after:invisible col-span-2 row-span-3 h-[600px] max-sm:col-span-1 max-sm:row-span-1 max-sm:h-[200px]"></div>
+            <div class="bg-[url(./assets/images/about-image.png)] bg-no-repeat bg-cover after:content-['.'] after:invisible max-sm:h-[200px]"></div>
+            <div class="bg-[url(./assets/images/essay-image.png)] bg-no-repeat bg-cover after:content-['.'] after:invisible max-sm:h-[200px]"></div>
+            <div class="bg-[url(./assets/images/about-image.png)] bg-no-repeat bg-cover after:content-['.'] after:invisible max-sm:h-[200px]"></div>
         </div>
-        <div class="flex justify-between mb-24">
-            <div class="flex flex-col w-[30%]">
+        <div class="flex justify-between mb-24 max-sm:flex-col">
+            <div class="flex flex-col w-[30%] max-sm:w-full max-sm:items-center max-sm:text-center">
                 <div class="flex items-end mb-4">
                     <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M37.2727 32.7273H30.9091C26.8991 32.7273 23.6365 29.4648 23.6365 25.4548C23.6365 21.4447 26.8991 18.1822 30.9091 18.1822H37.2727C37.7752 18.1822 38.1818 17.7756 38.1818 17.2731V14.5458C38.1818 12.6395 36.7031 11.0892 34.8349 10.9388L29.6139 1.81965C29.1301 0.976257 28.3488 0.373454 27.414 0.123146C26.4836 -0.125458 25.5106 0.00510802 24.6779 0.489788L6.78021 10.9095H3.63682C1.63137 10.9095 0.000488281 12.5403 0.000488281 14.5458V36.3637C0.000488281 38.3691 1.63129 40 3.63682 40H34.5454C36.5509 40 38.1818 38.3692 38.1818 36.3637V33.6364C38.1818 33.1339 37.7752 32.7273 37.2727 32.7273ZM30.7414 7.44967L32.7222 10.9095H24.7987L30.7414 7.44967ZM10.3938 10.9095L25.5931 2.0611C26.0042 1.8205 26.4844 1.75659 26.9435 1.87914C27.4078 2.0034 27.7949 2.30348 28.0355 2.72339L28.0373 2.72671L13.9827 10.9095H10.3938Z" fill="#B4DE4E"/>
                     </svg>
                     <p class="text-[#171F32] font-bold font-muller text-xl ml-4">Доступность</p>
                 </div>
-                <p class="text-[#171F32] font-muller text-md">Мы предлагаем самые приемлимые цены и варианты кладовок на рынке. Экономим деньги и предоставляем удобный сервис.</p>
+                <p class="text-[#171F32] font-muller text-md max-sm:mb-4">Мы предлагаем самые приемлимые цены и варианты кладовок на рынке. Экономим деньги и предоставляем удобный сервис.</p>
             </div>
-            <div class="flex flex-col w-[30%]">
+            <div class="flex flex-col w-[30%] max-sm:w-full max-sm:items-center max-sm:text-center">
                 <div class="flex items-end mb-4">
                     <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M37.2727 32.7273H30.9091C26.8991 32.7273 23.6365 29.4648 23.6365 25.4548C23.6365 21.4447 26.8991 18.1822 30.9091 18.1822H37.2727C37.7752 18.1822 38.1818 17.7756 38.1818 17.2731V14.5458C38.1818 12.6395 36.7031 11.0892 34.8349 10.9388L29.6139 1.81965C29.1301 0.976257 28.3488 0.373454 27.414 0.123146C26.4836 -0.125458 25.5106 0.00510802 24.6779 0.489788L6.78021 10.9095H3.63682C1.63137 10.9095 0.000488281 12.5403 0.000488281 14.5458V36.3637C0.000488281 38.3691 1.63129 40 3.63682 40H34.5454C36.5509 40 38.1818 38.3692 38.1818 36.3637V33.6364C38.1818 33.1339 37.7752 32.7273 37.2727 32.7273ZM30.7414 7.44967L32.7222 10.9095H24.7987L30.7414 7.44967ZM10.3938 10.9095L25.5931 2.0611C26.0042 1.8205 26.4844 1.75659 26.9435 1.87914C27.4078 2.0034 27.7949 2.30348 28.0355 2.72339L28.0373 2.72671L13.9827 10.9095H10.3938Z" fill="#B4DE4E"/>
                     </svg>
                     <p class="text-[#171F32] font-bold font-muller text-xl ml-4">Доступность</p>
                 </div>
-                <p class="text-[#171F32] font-muller text-md">Мы предлагаем самые приемлимые цены и варианты кладовок на рынке. Экономим деньги и предоставляем удобный сервис.</p>
+                <p class="text-[#171F32] font-muller text-md max-sm:mb-4">Мы предлагаем самые приемлимые цены и варианты кладовок на рынке. Экономим деньги и предоставляем удобный сервис.</p>
             </div>
-            <div class="flex flex-col w-[30%]">
+            <div class="flex flex-col w-[30%] max-sm:w-full max-sm:items-center max-sm:text-center">
                 <div class="flex items-end mb-4">
                     <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M37.2727 32.7273H30.9091C26.8991 32.7273 23.6365 29.4648 23.6365 25.4548C23.6365 21.4447 26.8991 18.1822 30.9091 18.1822H37.2727C37.7752 18.1822 38.1818 17.7756 38.1818 17.2731V14.5458C38.1818 12.6395 36.7031 11.0892 34.8349 10.9388L29.6139 1.81965C29.1301 0.976257 28.3488 0.373454 27.414 0.123146C26.4836 -0.125458 25.5106 0.00510802 24.6779 0.489788L6.78021 10.9095H3.63682C1.63137 10.9095 0.000488281 12.5403 0.000488281 14.5458V36.3637C0.000488281 38.3691 1.63129 40 3.63682 40H34.5454C36.5509 40 38.1818 38.3692 38.1818 36.3637V33.6364C38.1818 33.1339 37.7752 32.7273 37.2727 32.7273ZM30.7414 7.44967L32.7222 10.9095H24.7987L30.7414 7.44967ZM10.3938 10.9095L25.5931 2.0611C26.0042 1.8205 26.4844 1.75659 26.9435 1.87914C27.4078 2.0034 27.7949 2.30348 28.0355 2.72339L28.0373 2.72671L13.9827 10.9095H10.3938Z" fill="#B4DE4E"/>
                     </svg>
                     <p class="text-[#171F32] font-bold font-muller text-xl ml-4">Доступность</p>
                 </div>
-                <p class="text-[#171F32] font-muller text-md">Мы предлагаем самые приемлимые цены и варианты кладовок на рынке. Экономим деньги и предоставляем удобный сервис.</p>
+                <p class="text-[#171F32] font-muller text-md max-sm:mb-4">Мы предлагаем самые приемлимые цены и варианты кладовок на рынке. Экономим деньги и предоставляем удобный сервис.</p>
             </div>
         </div>
-        <div class="bg-lightSky/40 rounded-md flex justify-around items-center py-9">
-            <p class="text-[#545454] font-bold italic font-montse text-lg w-2/3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="bg-lightSky/40 rounded-md flex justify-around items-center py-9 max-sm:flex-col max-sm:px-4">
+            <p class="text-[#545454] font-bold font-montse text-lg w-2/3 max-sm:mb-6 max-sm:w-full max-sm:text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <button class="font-muller text-lg text-[#545454] border-2 border-limeGreen rounded-3xl py-2 px-6 h-max hover:bg-limeGreen hover:text-white transition-all">Забронировать кладовку</button>
         </div>
     </section>
-    <footer class="w-screen bg-[#545454] mt-24">
+    <footer class="w-screen bg-[#545454] mt-32">
         <div class="container flex flex-col font-montse py-8">
-            <div class="flex justify-between">
-                <p class="text-limeGreen font-bold text-sm italic">кладовка 😎<br>на районе</p>
-                <ul class="font-semibold text-white text-sm">
+            <div class="flex justify-between max-sm:w-full max-sm:flex-wrap max-sm">
+                <p class="text-limeGreen font-bold text-sm max-sm:order-first">кладовка 😎<br>на районе</p>
+                <ul class="font-semibold text-white text-sm max-sm:order-3 max-sm:columns-2 max-sm:mb-6 max-sm:w-full">
                     <li class="mb-2"><a href="#" class="hover:text-limeGreen transition-all">О нас</a></li>
                     <li class="mb-2"><a href="#" class="hover:text-limeGreen transition-all">Преимущества кладовок</a></li>
                     <li class="mb-2"><a href="#" class="hover:text-limeGreen transition-all">Что нельзя хранить</a></li>
@@ -148,31 +152,26 @@
                     <li class="mb-2"><a href="#" class="hover:text-limeGreen transition-all">Блог</a></li>
                     <li><a href="#" class="hover:text-limeGreen transition-all">Контакты</a></li>
                 </ul>
-                <div class="flex flex-col">
+                <div class="flex flex-col max-sm:order-4">
                     <p class="font-medium text-white text-sm mb-2">Наши соцсети</p>
                     <div class="flex">
                         <a href="#" class="bg-[#D9D9D9] w-[22px] h-[22px] mr-2 hover:bg-limeGreen transition-all"></a>
                         <a href="#" class="bg-[#D9D9D9] w-[22px] h-[22px] hover:bg-limeGreen transition-all"></a>
                     </div>
                 </div>
-                <div class="flex flex-col">
+                <div class="flex flex-col max-sm:order-1 max-sm:mb-6">
                     <a href="tel:+74956751825" class="text-white text-sm font-medium hover:text-limeGreen transition-all mb-2">+7 (495) 675 18 25</a>
                     <a href="mailto:info@kladovka.ru" class="text-white text-sm font-medium hover:text-limeGreen transition-all">info@kladovka.ru</a>
                 </div>
-                <button class="text-sm font-medium text-darkGray py-2 px-4 bg-white rounded-md h-max hover:bg-limeGreen hover:text-white transition-all">Вход</button>
+                <button class="text-sm font-medium text-darkGray py-2 px-4 bg-white rounded-md h-max hover:bg-limeGreen hover:text-white transition-all max-sm:order-5">Вход</button>
             </div>
-            <div class="flex mt-12">
-                <p class="text-white text-sm mr-3">©2022 Кладовка на районе. All rights reserved.</p>
+            <div class="flex mt-12 max-sm:order-last max-sm:flex-wrap">
+                <p class="text-white text-sm mr-3 max-sm:w-full max-sm:mb-3">©2022 Кладовка на районе. All rights reserved.</p>
                 <a href="#" class="text-white text-sm font-medium hover:text-limeGreen transition-all mr-3">Terms of Use</a>
                 <a href="#" class="text-white text-sm font-medium hover:text-limeGreen transition-all mr-3">Privacy</a>
                 <a href="#" class="text-white text-sm font-medium hover:text-limeGreen transition-all">Cookies</a>
             </div>
         </div>
     </footer>
-    <script>
-        document.getElementById('link').getAttribute('href') == window.location.pathname
-            ? document.getElementById('link').classList.add('text-white/80')
-            : null
-    </script>
 </body>
 </html>

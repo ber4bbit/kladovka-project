@@ -1,15 +1,25 @@
-const faqBtns = document.querySelectorAll('.faq-btn');
+const faqItems = document.querySelectorAll('.faq-item');
 
-faqBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        btn.parentElement.parentElement.childNodes[3].classList.toggle('hidden');
-        btn.classList.toggle('px-2')
-        btn.classList.toggle('px-3')
+faqItems.forEach(item => {
+    item.addEventListener('click', () => {
+        // item.childNodes[3].classList.toggle('invisible')
 
-        btn.innerText == '+'
-            ? btn.innerText = '-'
-            : btn.innerText == '-'
-                ? btn.innerText = '+'
+        item.childNodes[3].style.opacity == '0'
+            ? item.childNodes[3].style.opacity = '1'
+            : item.childNodes[3].style.opacity == '1'
+                ? item.childNodes[3].style.opacity = '0'
+                : null
+
+        item.childNodes[3].style.height == '0px'
+            ? item.childNodes[3].style.height = '10rem'
+            : item.childNodes[3].style.height == '10rem'
+                ? item.childNodes[3].style.height = '0px'
+                : null
+
+        item.childNodes[1].children[1].innerText == '+'
+            ? item.childNodes[1].children[1].innerText = '-'
+            : item.childNodes[1].children[1].innerText == '-'
+                ? item.childNodes[1].children[1].innerText = '+'
                 : null
     })
 })

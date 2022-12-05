@@ -46,7 +46,7 @@
   top: 10%;
   left: 23px;
   transition-delay: 0s;
-  background-color: rgb(255, 130, 130);
+  background-color: #373F41;
   display: block;
   border-radius: 1rem;
   transition: .25s ease-in-out;
@@ -59,7 +59,7 @@
   left: 10%;
   top: 23px;
   transition-delay: .25s;
-  background-color: rgb(255, 130, 130);
+  background-color: #373F41;
   display: block;
   border-radius: 1rem;
   transition: .25s ease-in-out;
